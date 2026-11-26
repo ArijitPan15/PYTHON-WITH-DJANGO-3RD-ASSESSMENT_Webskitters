@@ -1,0 +1,24 @@
+Attendance Audit Summary
+Total rows: 5
+Clean: 0
+Duplicate: 1
+Suspicious: 3
+Rejected: 1
+
+Employee ID: E-02
+Clean: 0
+Duplicate: 0
+Suspicious: 0
+Rejected: 1
+
+Employee ID: E101
+Clean: 0
+Duplicate: 1
+Suspicious: 2
+Rejected: 0
+
+Employee ID: E104
+Clean: 0
+Duplicate: 0
+Suspicious: 1
+Rejected: 0

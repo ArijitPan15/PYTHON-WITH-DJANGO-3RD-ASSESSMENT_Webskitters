@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Support Desk</title>
+    <link rel="stylesheet" href="{% static 'supportdesk/style.css' %}">
+</head>
+<body>
+<main>
+    <h1>Submit Support Ticket</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><button type="button" id="check-priority" data-url="{% url 'check_priority' %}">Check Priority</button></p>
+        <p id="priority-result" aria-live="polite"></p>
+        <button type="submit">Submit Ticket</button>
+    </form>
+    <script src="{% static 'supportdesk/ticket.js' %}"></script>
+</main>
+</body>
+</html>

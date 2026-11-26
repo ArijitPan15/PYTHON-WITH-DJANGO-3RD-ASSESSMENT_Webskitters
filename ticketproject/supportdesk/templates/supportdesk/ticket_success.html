@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Ticket Submitted</title>
+    <link rel="stylesheet" href="{% static 'supportdesk/style.css' %}">
+</head>
+<body>
+<main>
+    <h1>Ticket submitted successfully!</h1>
+    <a href="{% url 'ticket_form' %}">Submit another ticket</a>
+</main>
+</body>
+</html>
